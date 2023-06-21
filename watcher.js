@@ -12,8 +12,7 @@ const watcher = chokidar.watch('C:\\GoEntity', {
 watcher
   .on('change', (path) => {
     console.log('File', path, 'has been changed');
-    git()
-      .add('./*')
+    git.add('./*')
       .commit("auto commit (::file changed)")
       .push('origin', 'main')
       .then(() => console.log('push successful'))
@@ -21,8 +20,7 @@ watcher
   })
   .on('add', (path) => {
     console.log('File', path, 'has been added');
-    git()
-      .add('./*')
+    git.add('./*')
       .commit("auto commit (::file added)")
       .push('origin', 'main')
       .then(() => console.log('push successful'))
