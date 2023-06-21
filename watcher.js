@@ -2,9 +2,9 @@ const chokidar = require('chokidar');
 const simpleGit = require('simple-git');
 
 const git = simpleGit();
-git.cwd('C:\\GoEntity');
+git.cwd('E:\Git\GoEntity');
 
-const watcher = chokidar.watch('C:\\GoEntity', {
+const watcher = chokidar.watch('E:\Git\GoEntity', {
   ignored: /(^|[\/\\])\../,
   persistent: true
 });
