@@ -38,7 +38,6 @@ const port = 3000;
 
 app.use(express.json());
 
-
 app.post('/webhook', function(req, res) {
   git.pull('origin', 'main')
     .then(() => console.log('successfully pulled recent changes made on repo blog_personal_node'))
