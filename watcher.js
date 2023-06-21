@@ -36,7 +36,7 @@ const gitQueue = async.queue((task, callback) => {
 const app = express();
 const port = 1313;
 
-app.use(express.json());
+// app.use(express.json());
 
 app.post('/webhook', function(req, res) {
   git.pull('origin', 'main')
