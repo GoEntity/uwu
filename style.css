@@ -1,6 +1,78 @@
-#dd{
-    background-color: #f5f5f5;
-    text-align: center;
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #660000;
+}
+
+header {
+    background-color: #660000;
+    color: rgb(226, 27, 120);
+    padding: 10px 0;
+    margin-top: 20px;
+    margin-bottom: 60px;
+    text-align: center;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+header h1 {
+    margin: 0;
+}
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+main h2 {
+    border-bottom: 1px solid #ffffff;
+    padding-bottom: 10px;
+}
+
+article {
+    margin-bottom: 20px;
+    margin-left: 40px;
+    text-align: left;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#downloads {
+    text-align: center;
+    padding: 20px;
+    background-color: #660000;
+    margin-top: 20px;
+}
+
+#downloads a {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #660000;
+    background-color: rgb(226, 27, 120);
+    text-decoration: none;
+    margin: 20px auto;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+#downloads a:hover {
+    background-color: #660000;
+    color: rgb(226, 27, 120);
+}
+
+footer {
+    background-color: #660000;
+    color: rgb(226, 27, 120);
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }

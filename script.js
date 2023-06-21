@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const blogPosts = document.getElementById('posts');
 
     let posts = [
-        { title: 'Posts', content: 'hi.. whats up.........' },
+        { title: 'hihihihihihihihihihihihihihihi', content: 'hi....hi....hi...............hi..................' },
         // { title: 'rando 2', content: 'hi' },
     ];
 
