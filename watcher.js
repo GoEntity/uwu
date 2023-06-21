@@ -31,7 +31,6 @@ const gitQueue = async.queue((task, callback) => {
   watcher.on(action, path => gitQueue.push({ action, path }));
 });
 
-
 watcher
   .on('change', (path) => {
     console.log('File', path, 'has been changed');
