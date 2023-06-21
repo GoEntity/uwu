@@ -14,7 +14,7 @@ const gitQueue = async.queue((task, callback) => {
   const { action, path } = task;
 
   console.log(`File ${path} :: ${action}`);
-  git.add('./*')
+  git.add('.')
     .commit(`auto commit (::file ${action})`)
     .push('origin', 'main')
     .then(() => {
