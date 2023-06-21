@@ -1,1 +1,1 @@
-manual command for now (personal)
+manual command for now (personal note) :: 
