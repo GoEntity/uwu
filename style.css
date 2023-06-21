@@ -92,7 +92,7 @@ article {
 .game-container{
     margin-left: 0;
     border: 0.5vw solid rgb(226, 27, 120, 0.75);
-    
+    /* background-color: red; */
 }
 
 footer {

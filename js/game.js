@@ -119,6 +119,7 @@ function update() {
     platform.array = platform.array.filter(plat => plat.y < gameHeight);
 
     if (playerY + player.height > gameHeight) {
+        player.img.src = 0;
         gameOver = true;
     }
 
@@ -146,7 +147,7 @@ function render() {
     context.drawImage(player.img, playerX, playerY, player.width, player.height);
 
     if (gameOver) {
-        context.font = "35px Arial";
+        context.font = "28px Monaco";
         var r_a = 0.75;
         context.fillStyle = `rgba(226, 27, 120, ${r_a})`;
         context.fillText("You lose... forever", gameWidth / 2 - 100, gameHeight / 2);
