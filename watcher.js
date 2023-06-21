@@ -26,4 +26,4 @@ watcher
       .then(() => console.log('push successful'))
       .catch((err) => console.error('error: ', err));
   });
-  .on('de')
+  .on('delete', (path) => {
