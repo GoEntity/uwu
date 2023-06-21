@@ -33,4 +33,4 @@ watcher
       .push('origin', 'main')
       .then(() => console.log('push successful'))
       .catch((err) => console.error('error: ', err));
-  }
+  })
