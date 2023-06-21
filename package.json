@@ -2,6 +2,7 @@
   "dependencies": {
     "async": "^3.2.4",
     "chokidar": "^3.5.3",
+    "express": "^4.18.2",
     "simple-git": "^3.19.0"
   },
   "scripts": {

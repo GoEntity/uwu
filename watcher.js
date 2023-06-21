@@ -1,6 +1,7 @@
 const chokidar = require('chokidar');
 const simpleGit = require('simple-git');
 const async = require('async');
+const express = require('express'); //for webhook
 
 const git = simpleGit();
 git.cwd('E:\\Git\\GoEntity');
@@ -29,4 +30,20 @@ const gitQueue = async.queue((task, callback) => {
 
 ['add', 'change', 'delete'].forEach(action => {
   watcher.on(action, path => gitQueue.push({ action, path }));
+});
+
+//adding webhook
+const app = express();
+const port = 3000;
+
+app.post('/webhook', function(req, res) {
+  git.pull('origin', 'main')
+    .then(() => console.log('successfully pulled recent changes made on repo blog_personal_node'))
+    .catch((err) => console.error('error: ', err));
+
+  res.sendStatus(200);
+});
+
+app.listen(port, function() {
+  console.log('listening on port :: ', port);
 });
