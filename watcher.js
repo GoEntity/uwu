@@ -10,7 +10,8 @@ const watcher = chokidar.watch('E:\\Git\\GoEntity', {
   persistent: true
 });
 
-const gitQue
+const gitQueue = async.queue((task, callback) => {
+  
 
 watcher
   .on('change', (path) => {
