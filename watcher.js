@@ -27,6 +27,6 @@ const gitQueue = async.queue((task, callback) => {
     });
 }, 1);
 
-['add', 'change', 'delete'].forEach(action => {
+['add', 'change', 'unlink'].forEach(action => {
   watcher.on(action, path => gitQueue.push({ action, path }));
 });
