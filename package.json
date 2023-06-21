@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "async": "^3.2.4",
     "chokidar": "^3.5.3",
     "simple-git": "^3.19.0"
   },
