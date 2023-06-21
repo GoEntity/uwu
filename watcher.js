@@ -30,3 +30,5 @@ const gitQueue = async.queue((task, callback) => {
 ['add', 'addDir', 'change', 'unlink', 'unlinkDir'].forEach(action => {
   watcher.on(action, path => gitQueue.push({ action, path }));
 });
+
+//test
