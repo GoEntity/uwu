@@ -1,6 +1,6 @@
 const chokidar = require('chokidar');
 const simpleGit = require('simple-git');
-const 
+const async = require('async');
 
 const git = simpleGit();
 git.cwd('E:\\Git\\GoEntity');
