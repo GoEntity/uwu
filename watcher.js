@@ -32,7 +32,3 @@ const gitQueue = async.queue((task, callback) => {
   watcher.on(action, path => gitQueue.push({ action, path }));
 });
 
-//adding webhook
-const app = express();
-const port = 1313;
-
