@@ -1,1 +1,1 @@
-manual command for now (personal note) :: either node watcher.js or 
+manual command for now (personal note) :: either node watcher.js or npm run auto
