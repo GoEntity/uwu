@@ -2,4 +2,4 @@ manual command for now (personal note // in case im not using Windows Task Sched
 
 //removed webhook
 
-//command to stop listening watcher: Ctrl + C
+//command to stop listening to watcher: Ctrl + C
