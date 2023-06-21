@@ -6,23 +6,31 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body id="dd">
-        <header>
+        <!-- <header>
             <h1>blahblahblah....</h1>
-        </header>
+        </header> -->
 
         <main>
-            <section id="posts">
-                <!-- js inject -->
-            </section>
-            <section id="downloads">
-                <p><a href="GoFlappy(Windows).zip">Download GoFlappy</a></p>
-            </section>
+            <div class="wrap">
+                <section id="downloads">
+                    <div id="posts">
+                        <!-- js inject -->
+                    </div>
+                    <div class="download-container">
+                        <p><a href="GoFlappy(Windows).zip">Download GoFlappy</a></p>
+                    </div>
+                    <div class="game-container">
+                        <canvas id="game" width="360" height="720"></canvas>
+                    </div>
+                </section>
+            </div>
         </main>
 
         <footer>
             <p>© 2023 GoEntity</p>
         </footer>
 
-        <script src="script.js"></script>
+        <script src="js/script.js"></script>
+        <script src="js/game.js"></script>
     </body>
 </html>

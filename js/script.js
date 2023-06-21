@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
         let postElement = document.createElement('article');
         
         let titleElement = document.createElement('h3');
-        let contentElement = document.createElement('h5');
+        let contentElement = document.createElement('h4');
 
         titleElement.textContent = post.title;
         contentElement.textContent = post.content;
