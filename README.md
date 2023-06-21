@@ -1,1 +1,1 @@
-manual command for now (personal note) :: 
+manual command for now (personal note) :: either node watcher.js or 
