@@ -36,16 +36,3 @@ const gitQueue = async.queue((task, callback) => {
 const app = express();
 const port = 1313;
 
-// app.use(express.json());
-
-app.post('/webhook', function(req, res) {
-  git.pull('origin', 'main')
-    .then(() => console.log('successfully pulled recent changes made on repo blog_personal_node'))
-    .catch((err) => console.error('error: ', err));
-
-  res.sendStatus(200);
-});
-
-app.listen(port, function() {
-  console.log('listening on port :: ', port);
-});
