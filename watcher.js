@@ -14,11 +14,11 @@ const gitQueue = async.queue((task, callback) => {
   const { action, path } = task;
 
   console.log(`File ${path} :: ${action}`);
-
-
-
-
   
+
+
+
+
 watcher
   .on('change', (path) => {
     console.log('File', path, 'has been changed');
