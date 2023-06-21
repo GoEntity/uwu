@@ -1,10 +1,11 @@
 const chokidar = require('chokidar');
-const git = require('simple-git')({
-    baseDir: 'C:\\GoEntity',
-});
+const simpleGit = require('simple-git');
+
+const git = simpleGit();
+git.cwd('C:\\GoEntity');
 
 const watcher = chokidar.watch('C:\\GoEntity', {
-  ignored: /(^|[\/\\])\../, // ignore dotfiles
+  ignored: /(^|[\/\\])\../,
   persistent: true
 });
 
@@ -14,7 +15,8 @@ watcher
     git()
       .add('./*')
       .commit("auto commit (::file changed)")
-      .push('origin', 'main', () => console.log('push successful'))
+      .push('origin', 'main')
+      .then(() => console.log('push successful'))
       .catch((err) => console.error('error: ', err));
   })
   .on('add', (path) => {
@@ -22,6 +24,7 @@ watcher
     git()
       .add('./*')
       .commit("auto commit (::file added)")
-      .push('origin', 'main', () => console.log('push successful'))
+      .push('origin', 'main')
+      .then(() => console.log('push successful'))
       .catch((err) => console.error('error: ', err));
   });
