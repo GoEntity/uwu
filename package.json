@@ -2,5 +2,8 @@
   "dependencies": {
     "chokidar": "^3.5.3",
     "simple-git": "^3.19.0"
+  },
+  "scripts": {
+    "auto": "node watcher.js"
   }
 }
