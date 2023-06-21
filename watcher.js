@@ -10,6 +10,8 @@ const watcher = chokidar.watch('E:\\Git\\GoEntity', {
   persistent: true
 });
 
+
+
 watcher
   .on('change', (path) => {
     console.log('File', path, 'has been changed');
