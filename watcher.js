@@ -27,3 +27,4 @@ watcher
       .catch((err) => console.error('error: ', err));
   });
   .on('delete', (path) => {
+    
