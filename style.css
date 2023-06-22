@@ -121,7 +121,7 @@ footer {
     display: inline-block;
     padding: 10px 20px;
     color: rgb(211, 0, 105);
-    background-color: rgb(211, 0, 105);
+    background-color: #000000;
     opacity: 0.75;
     text-decoration: none;
     margin: auto auto;
