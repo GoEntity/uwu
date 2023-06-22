@@ -120,3 +120,12 @@ footer {
 #posts h4{
     font-size: 2.5vh;
 }
+
+.rr{
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-align: center;
+    color: rgb(226, 27, 120, 0.75);
+    font-weight: bold;
+}
