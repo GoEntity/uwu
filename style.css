@@ -127,4 +127,6 @@ footer {
     opacity: 0.75;
 }
 
-#wrap :nth-child(div)
+#wrap :nth-child(div){
+    
+}
