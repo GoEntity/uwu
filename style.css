@@ -132,6 +132,6 @@ footer {
 
 #goback a:hover{
     background-color: rgb(211, 0, 105);
-    color: rgb(226, 27, 120);
+    color: #000000;
     opacity: 0.75;
 }
