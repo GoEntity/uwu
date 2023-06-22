@@ -127,6 +127,6 @@ footer {
     opacity: 0.75;
 }
 
-#wrap :first-child{
+#wrap div:first-child{
     margin-left: 300px;
 }
