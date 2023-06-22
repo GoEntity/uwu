@@ -121,4 +121,8 @@ footer {
     font-weight: bold;
 }
 
-#goback a:hover
+#goback a:hover{
+    background-color: #000000;
+    color: rgb(226, 27, 120);
+    opacity: 0.75;
+}
