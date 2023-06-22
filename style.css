@@ -120,7 +120,7 @@ footer {
 #goback a{
     display: inline-block;
     padding: 10px 20px;
-    color: #000000;
+    color: rgb(211, 0, 105);
     background-color: rgb(211, 0, 105);
     opacity: 0.75;
     text-decoration: none;
