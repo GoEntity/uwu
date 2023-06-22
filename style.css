@@ -128,5 +128,5 @@ footer {
 }
 
 #wrap :first-child{
-    text-align: center;
+    margin-left: 300px;
 }
