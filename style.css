@@ -110,7 +110,7 @@ footer {
 
 #goback{
     position: fixed;
-    top: 0;
+    top: 5px;
     left: 0;
     right: 0;
     text-align: center;
