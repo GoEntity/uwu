@@ -127,4 +127,6 @@ footer {
     opacity: 0.75;
 }
 
-#wrap :first-child
+#wrap :first-child{
+    align-items: center;
+}
