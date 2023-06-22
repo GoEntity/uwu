@@ -127,4 +127,4 @@ footer {
     opacity: 0.75;
 }
 
-#wrap first
+#wrap :first-child
