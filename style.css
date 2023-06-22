@@ -128,5 +128,5 @@ footer {
 }
 
 #wrap :first-child{
-    align
+    align-content: center;
 }
