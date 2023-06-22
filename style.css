@@ -47,7 +47,7 @@ main h2 {
 }
 
 .download-container, .game-container {
-    flex: 1;
+    /* flex: 1; */
     margin-top: 50px;
 }
 
