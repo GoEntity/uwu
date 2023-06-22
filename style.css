@@ -126,7 +126,3 @@ footer {
     color: rgb(226, 27, 120);
     opacity: 0.75;
 }
-
-#wrap :nth-child(div){
-    margin-left: 300px;
-}
