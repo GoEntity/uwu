@@ -105,5 +105,5 @@ footer {
     flex-direction: column;
     align-items: center;
     margin-top: 4vw;
-    border: 0.5vw solid rgb(226, 27, 120, 0.75);
+    /* border: 0.5vw solid rgb(226, 27, 120, 0.75); */
 }
