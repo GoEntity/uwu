@@ -6,7 +6,7 @@ git add .
 git commit -m " "
 git push
 echo > 000_STATUS_000
-git add .
-git commit -m "_______________________________GoEntity is OFFLINE"
+git add 000_STATUS_000
+git commit -m "_________________________________________GoEntity is currently OFFLINE"
 git push
 
