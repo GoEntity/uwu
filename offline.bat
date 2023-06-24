@@ -1,11 +1,11 @@
 @echo off
 cd E:\Git\GoEntity
 git push --set-upstream origin main
-echo > "GoEntity is OFFLINE"
+echo > GoEntity is OFFLINE
 git add .
-git commit -m ""GoEntity is OFFLINE""
+git commit -m "GoEntity is OFFLINE"
 git push
 del GoEntity is OFFLINE
 git add .
-git commit -m ""GoEntity is ONLINE""
+git commit -m "GoEntity is ONLINE"
 git push
