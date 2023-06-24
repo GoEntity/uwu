@@ -4,5 +4,6 @@ git pull origin main
 
 echo HI IM ONLINE > 000_STATUS_000
 git add 000_STATUS_000
-git commit -m "_________________________________________GoEntity is currently ONLINE"
+git reset -- online.bat
+git commit -m "<< ONLINE STATUS >>_______________GoEntity is currently ONLINE"
 git push
