@@ -1,7 +1,7 @@
 @echo off
 cd E:\Git\GoEntity
 git pull origin main
-git push --set-upstream origin main
+
 del 000_STATUS_000
 git add .
 git commit -m " "
