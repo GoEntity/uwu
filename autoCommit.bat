@@ -1,5 +1,6 @@
 @echo off
 cd E:\Git\GoEntity
+git push --set-upstream origin main
 echo > file.txt
 git add .
 git commit -m "Add file.txt"
