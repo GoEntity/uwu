@@ -2,8 +2,18 @@
 cd E:\Git\GoEntity
 git pull origin main
 
-echo HI IM OFFLINE > lllllllllllllllllllllllllllllllll
-git add lllllllllllllllllllllllllllllllll
+echo HI IM OFFLINE > XXXXXXXXXXXXXXXXXXXXXXXXXX
+echo HI IM OFFLINE > XXXXXXXXXXXXXXXXXXXXXXXXX
+echo HI IM OFFLINE > XXXXXXXXXXXXXXXXXXXXXXXX
+echo HI IM OFFLINE > XXXXXXXXXXXXXXXXXXXXXXX
+echo HI IM OFFLINE > XXXXXXXXXXXXXXXXXXXXXX
+
+git add XXXXXXXXXXXXXXXXXXXXXXXXXX
+git add XXXXXXXXXXXXXXXXXXXXXXXXX
+git add XXXXXXXXXXXXXXXXXXXXXXXX
+git add XXXXXXXXXXXXXXXXXXXXXXX
+git add XXXXXXXXXXXXXXXXXXXXXX
+
 git reset -- offline.bat
 git commit -m "<< ONLINE STATUS >>_______________GoEntity is currently OFFLINE :("
 git push

@@ -2,19 +2,17 @@
 cd E:\Git\GoEntity
 git pull origin main
 
-echo HI IM ONLINE > __________llllll__________
-echo HI IM ONLINE > _________lll__lll_________
-echo HI IM ONLINE > ________lll____lll________
-echo HI IM ONLINE > ________lll____lll________
-echo HI IM ONLINE > _________lll__lll_________
-echo HI IM ONLINE > __________llllll__________
+echo HI IM ONLINE > 00000000000000000000000000
+echo HI IM ONLINE > 0000000000000000000000000
+echo HI IM ONLINE > 000000000000000000000000
+echo HI IM ONLINE > 00000000000000000000000
+echo HI IM ONLINE > 0000000000000000000000
 
-git add __________llllll__________
-git add _________lll__lll_________
-git add ________lll____lll________
-git add ________lll____lll________
-git add _________lll__lll_________
-git add __________llllll__________
+git add 00000000000000000000000000
+git add 0000000000000000000000000
+git add 000000000000000000000000
+git add 00000000000000000000000
+git add 0000000000000000000000
 
 git reset -- online.bat
 git commit -m "<< ONLINE STATUS >>_______________GoEntity is currently ONLINE :)"
