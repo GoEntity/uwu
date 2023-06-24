@@ -3,10 +3,10 @@ cd E:\Git\GoEntity
 git pull origin main
 del 000_STATUS_000
 git add .
-git commit -m "Is GoEntity Online.......?"
+git commit -m " "
 git push
 echo > 000_STATUS_000
 git add .
-git commit -m "GoEntity is OFFLINE"
+git commit -m "_______________________________GoEntity is OFFLINE"
 git push
 
