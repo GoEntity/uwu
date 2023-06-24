@@ -7,6 +7,6 @@ git commit -m "Is GoEntity Online.......?"
 git push
 echo > 000_STATUS_000
 git add .
-git commit -m "GoEntity is ONLINE"
+git commit -m "GoEntity is OFFLINE"
 git push
 
