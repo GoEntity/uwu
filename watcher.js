@@ -6,7 +6,7 @@ const git = simpleGit();
 git.cwd('E:\\Git\\GoEntity');
 
 const watcher = chokidar.watch('E:\\Git\\GoEntity', {
-  ignored: /(^|[\/\\])\..|node_modules/,
+  ignored: [/(^|[\/\\])\..|node_modules/, /offline\.bat$/, /online\.bat$/],
   persistent: true
 });
 
