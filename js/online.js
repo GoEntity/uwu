@@ -15,7 +15,7 @@ fetch('0')
         console.error('Error:', error);
     });
 
-    fetch('onlineTime')
+fetch('onlineTime')
     .then(response => response.text())
     .then(data => {
         let onlineTime = new Date(data);
