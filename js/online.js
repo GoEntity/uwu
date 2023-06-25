@@ -2,7 +2,6 @@ fetch('0')
     .then(response => response.text())
     .then(data => {
         let statusElement = document.getElementById('status');
-        let sinceElement = document.getElementById('since');
 
         statusElement.textContent = data;
 
@@ -11,15 +10,30 @@ fetch('0')
         } else if (data.includes('OFFLINE')) {
             statusElement.style.color = 'rgb(158, 0, 0)';
         }
-
-        return fetch('lastStatusChangeTime');
     })
+    .catch((error) => {
+        console.error('Error:', error);
+    });
+
+fetch('onlineTime')
     .then(response => response.text())
     .then(data => {
-        let lastChangeTime = new Date(data);
+        let onlineTime = new Date(data);
         let currentTime = new Date();
-        let minutesPassed = Math.round((currentTime - lastChangeTime) / 60000);
-        sinceElement.textContent = ` (since ${minutesPassed} minutes ago)`;
+        let minutesPassed = Math.round((currentTime - onlineTime) / 60000);
+        document.getElementById('timeOnline').textContent = `since ${minutesPassed} minutes ago`;
+    })
+    .catch((error) => {
+        console.error('Error:', error);
+    });
+
+fetch('offlineTime')
+    .then(response => response.text())
+    .then(data => {
+        let offlineTime = new Date(data);
+        let currentTime = new Date();
+        let minutesPassed = Math.round((currentTime - offlineTime) / 60000);
+        document.getElementById('timeOffline').textContent = `since ${minutesPassed} minutes ago`;
     })
     .catch((error) => {
         console.error('Error:', error);
