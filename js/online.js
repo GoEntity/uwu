@@ -14,3 +14,27 @@ fetch('0')
     .catch((error) => {
         console.error('Error:', error);
     });
+
+    fetch('onlineTime')
+    .then(response => response.text())
+    .then(data => {
+        let onlineTime = new Date(data);
+        let currentTime = new Date();
+        let minutesPassed = Math.round((currentTime - onlineTime) / 60000);
+        document.getElementById('timeSinceOnline').textContent = `Online status last changed ${minutesPassed} minutes ago`;
+    })
+    .catch((error) => {
+        console.error('Error:', error);
+    });
+
+fetch('offlineTime')
+    .then(response => response.text())
+    .then(data => {
+        let offlineTime = new Date(data);
+        let currentTime = new Date();
+        let minutesPassed = Math.round((currentTime - offlineTime) / 60000);
+        document.getElementById('timeSinceOffline').textContent = `Offline status last changed ${minutesPassed} minutes ago`;
+    })
+    .catch((error) => {
+        console.error('Error:', error);
+    });
