@@ -7,7 +7,7 @@ const git = simpleGit();
 git.cwd('E:\\Git\\GoEntity');
 
 const watcher = chokidar.watch('E:\\Git\\GoEntity', {
-  ignored: [/(^|[\/\\])\..|node_modules/, /offline\.bat, /online\.bat, (filename) => path.basename(filename).startsWith('0')],
+  ignored: [/(^|[\/\\])\..|node_modules/, /offline\.bat/, /online\.bat/, (filename) => path.basename(filename).startsWith('0')],
   persistent: true
 });
 
