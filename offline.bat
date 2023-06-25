@@ -19,7 +19,7 @@ echo OFFLINE > E:\Git\GoEntity\000000000000
 echo OFFLINE > E:\Git\GoEntity\00000000000
 echo OFFLINE > E:\Git\GoEntity\0000000000
 echo OFFLINE > E:\Git\GoEntity\000000000
-echo HI IM OFFLINE > E:\Git\GoEntity\00000000
+echo OFFLINE > E:\Git\GoEntity\00000000
 echo HI IM OFFLINE > E:\Git\GoEntity\0000000
 echo HI IM OFFLINE > E:\Git\GoEntity\000000
 echo HI IM OFFLINE > E:\Git\GoEntity\00000
