@@ -135,3 +135,18 @@ footer {
     color: #000000;
     opacity: 0.75;
 }
+
+#goback b, em{
+    /* color: rgb(211, 0, 105); */
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#goback b{
+    color: blueviolet;
+}
+
+#goback em{
+    color: rgb(211, 0, 105);
+}
