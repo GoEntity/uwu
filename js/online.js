@@ -32,6 +32,7 @@ function updateTimePassed() {
         });
 }
 
+
 updateStatus();
 updateTimePassed();
 
