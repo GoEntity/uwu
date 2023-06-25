@@ -21,7 +21,7 @@ fetch('onlineTime')
         let onlineTime = new Date(data);
         let currentTime = new Date();
         let minutesPassed = Math.round((currentTime - onlineTime) / 60000);
-        document.getElementById('timeSinceOnline').textContent = `Online status last changed ${minutesPassed} minutes ago`;
+        document.getElementById('timeSinceOnline').textContent = `Online ${minutesPassed} minutes ago`;
     })
     .catch((error) => {
         console.error('Error:', error);
