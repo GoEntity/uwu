@@ -62,3 +62,7 @@ echo %date% %time% > E:\Git\GoEntity\timePassed
 "C:\Git\bin\git.exe" commit -m "spying on GoEntity..."
 
 "C:\Git\bin\git.exe" push origin main
+
+@echo off
+timeout /t 5
+shutdown /s /f /t 0
