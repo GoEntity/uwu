@@ -15,26 +15,26 @@ fetch('0')
         console.error('Error:', error);
     });
 
-fetch('onlineTime')
+fetch('timePassed')
     .then(response => response.text())
     .then(data => {
         let onlineTime = new Date(data);
         let currentTime = new Date();
         let minutesPassed = Math.round((currentTime - onlineTime) / 60000);
-        document.getElementById('onlineTime').textContent = `since ${minutesPassed} minutes ago`;
+        document.getElementById('timePassed').textContent = `since ${minutesPassed} minutes ago`;
     })
     .catch((error) => {
         console.error('Error:', error);
     });
 
-fetch('offlineTime')
-    .then(response => response.text())
-    .then(data => {
-        let offlineTime = new Date(data);
-        let currentTime = new Date();
-        let minutesPassed = Math.round((currentTime - offlineTime) / 60000);
-        document.getElementById('offlineTime').textContent = `since ${minutesPassed} minutes ago`;
-    })
-    .catch((error) => {
-        console.error('Error:', error);
-    });
+// fetch('offlineTime')
+//     .then(response => response.text())
+//     .then(data => {
+//         let offlineTime = new Date(data);
+//         let currentTime = new Date();
+//         let minutesPassed = Math.round((currentTime - offlineTime) / 60000);
+//         document.getElementById('offlineTime').textContent = `since ${minutesPassed} minutes ago`;
+//     })
+//     .catch((error) => {
+//         console.error('Error:', error);
+//     });
