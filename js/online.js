@@ -2,7 +2,6 @@ fetch('0')
     .then(response => response.text())
     .then(data => {
         let statusElement = document.getElementById('status');
-
         statusElement.textContent = data;
 
         if (data.includes('ONLINE')) {
