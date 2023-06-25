@@ -58,7 +58,6 @@ echo %date% %time% > E:\Git\GoEntity\timePassed
 
 "C:\Git\bin\git.exe" reset -- offline.bat
 "C:\Git\bin\git.exe" commit -m "<< ONLINE STATUS >>_______________GoEntity is currently OFFLINE :("
-"C:\Git\bin\git.exe" push origin main
 
 "C:\Git\bin\git.exe" add E:\Git\GoEntity\timePassed
 "C:\Git\bin\git.exe" commit -m "spying on GoEntity..."
