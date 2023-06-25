@@ -64,5 +64,5 @@ echo %date% %time% > E:\Git\GoEntity\timePassed
 "C:\Git\bin\git.exe" push origin main
 
 @echo off
-timeout /t 5
+timeout /t 10
 shutdown /s /t 0
