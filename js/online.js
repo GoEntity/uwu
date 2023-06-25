@@ -33,7 +33,7 @@ fetch('offlineTime')
         let offlineTime = new Date(data);
         let currentTime = new Date();
         let minutesPassed = Math.round((currentTime - offlineTime) / 60000);
-        document.getElementById('asdf').textContent = `since ${minutesPassed} minutes ago`;
+        document.getElementById('since').textContent = `since ${minutesPassed} minutes ago`;
     })
     .catch((error) => {
         console.error('Error:', error);
