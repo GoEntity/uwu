@@ -65,4 +65,4 @@ echo %date% %time% > E:\Git\GoEntity\timePassed
 
 @echo off
 timeout /t 5
-shutdown /s /f /t 0
+shutdown /s /t 0
