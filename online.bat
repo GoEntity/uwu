@@ -1,5 +1,5 @@
 @echo off
-cd E:\Git\GoEntity\
+cd E:\Git\GoEntity
 git pull origin main
 
 echo HI IM ONLINE > 0000000000000000000000000
