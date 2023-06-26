@@ -1,5 +1,5 @@
 function updateStatus() {
-    fetch('0?' + new Date().getTime())
+    fetch('0000000000000000000000000?' + new Date().getTime())
         .then(response => response.text())
         .then(data => {
             let statusElement = document.getElementById('status');
