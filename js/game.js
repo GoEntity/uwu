@@ -54,11 +54,11 @@ function keyDown(e) {
     }
 }
 
-function keyUp(e) {
-    if (e.keyCode == 37 || e.keyCode == 39) {
-        speedX = 0;
-    }
-}
+// function keyUp(e) {
+//     if (e.keyCode == 37 || e.keyCode == 39) {
+//         speedX = 0;
+//     }
+// }
 
 function updatePlatform() {
     if (platform.array.length === 0) {
