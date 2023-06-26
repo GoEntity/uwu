@@ -2,7 +2,7 @@ let game;
 let gameWidth = 360;
 let gameHeight = 720;
 let context;
-let scrollSpeed = 2.1;
+let scrollSpeed = 2.6;
 let frameCount = 0;
 let keyState = {};
 
@@ -18,7 +18,7 @@ let playerX = gameWidth / 2 - player.width / 2;
 let speedX = 0;
 let speedY = 0;
 let gravity = 0.5;
-let jump = 10;
+let jump = 6;
 let jumpSpeed;
 
 let platform = {
@@ -101,6 +101,11 @@ function update() {
     } else {
         speedX = 0;
     }
+    if (keyState[32] && onPlatform()) {
+        speedY = -jump;
+    }
+    playerX += speedX;
+    playerY += speedY;
     playerX += speedX;
     playerY += speedY;
 
