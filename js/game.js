@@ -37,7 +37,7 @@ window.onload = function() {
     game.height = gameHeight;
     context = game.getContext('2d');
     document.addEventListener('keydown', keyDown);
-    // document.addEventListener('keyup', keyUp);
+    document.addEventListener('keyup', keyUp);
     updatePlatform();
     playerY = platform.array[0].y - player.height;
     jumpSpeed = -jump;
