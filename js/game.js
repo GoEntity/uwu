@@ -36,29 +36,33 @@ window.onload = function() {
     game.width = gameWidth;
     game.height = gameHeight;
     context = game.getContext('2d');
-    document.addEventListener('keydown', keyDown);
-    document.addEventListener('keyup', keyUp);
+    document.addEventListener('keydown', function(e){
+        keyState[e.keyCode || e.which] = true;
+    }, true);
+    document.addEventListener('keyup', function(e){
+        keyState[e.keyCode || e.which] = false;
+    }, true);
     updatePlatform();
     playerY = platform.array[0].y - player.height;
     jumpSpeed = -jump;
     gameLoop();
 }
 
-function keyDown(e) {
-    if (e.keyCode == 32 && onPlatform()) {
-        speedY = jumpSpeed;
-    } else if (e.keyCode == 37) {
-        speedX = -player.speed;
-    } else if (e.keyCode == 39) {
-        speedX = player.speed;
-    }
-}
+// function keyDown(e) {
+//     if (e.keyCode == 32 && onPlatform()) {
+//         speedY = jumpSpeed;
+//     } else if (e.keyCode == 37) {
+//         speedX = -player.speed;
+//     } else if (e.keyCode == 39) {
+//         speedX = player.speed;
+//     }
+// }
 
-function keyUp(e) {
-    if (e.keyCode == 37 || e.keyCode == 39) {
-        speedX = 0;
-    }
-}
+// function keyUp(e) {
+//     if (e.keyCode == 37 || e.keyCode == 39) {
+//         speedX = 0;
+//     }
+// }
 
 function updatePlatform() {
     if (platform.array.length === 0) {
@@ -89,6 +93,13 @@ function gameLoop() {
 function update() {
     let garbageY = playerY;
     speedY += gravity;
+    if (keyState[37]){
+        speedX = -player.speed;
+    } else if (keyState[39]){
+        speedX = player.speed;
+    } else {
+        speedX = 0;
+    }
     playerX += speedX;
     playerY += speedY;
 
