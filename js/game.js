@@ -4,6 +4,7 @@ let gameHeight = 720;
 let context;
 let scrollSpeed = 2.1;
 let frameCount = 0;
+let keyState = {};
 
 let player = {
     width: 50,
