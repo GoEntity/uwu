@@ -21,6 +21,6 @@ echo ONLINE > E:\Git\auto_git_push_for_my_blog\00000000000000000000
 
 echo %date% %time% > E:\Git\auto_git_push_for_my_blog\timePassed
 "C:\Git\bin\git.exe" add E:\Git\auto_git_push_for_my_blog\timePassed
-"C:\Git\bin\git.exe" commit -m "spying on auto_git_push_for_my_blog..."
+"C:\Git\bin\git.exe" commit -m "spying on GoEntity.............."
 
 "C:\Git\bin\git.exe" push origin main
