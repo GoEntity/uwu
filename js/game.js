@@ -49,22 +49,6 @@ window.onload = function() {
     gameLoop();
 }
 
-// function keyDown(e) {
-//     if (e.keyCode == 32 && onPlatform()) {
-//         speedY = jumpSpeed;
-//     } else if (e.keyCode == 37) {
-//         speedX = -player.speed;
-//     } else if (e.keyCode == 39) {
-//         speedX = player.speed;
-//     }
-// }
-
-// function keyUp(e) {
-//     if (e.keyCode == 37 || e.keyCode == 39) {
-//         speedX = 0;
-//     }
-// }
-
 function updatePlatform() {
     if (platform.array.length === 0) {
         platform.array.push({

@@ -4,9 +4,9 @@ const async = require('async');
 const path = require('path');
 
 const git = simpleGit();
-git.cwd('E:\\Git\\auto_git_push_for_my_blog');
+git.cwd('E:\\Git\\uwu');
 
-const watcher = chokidar.watch('E:\\Git\\auto_git_push_for_my_blog', {
+const watcher = chokidar.watch('E:\\Git\\uwu', {
   ignored: [/(^|[\/\\])\..|node_modules/, /offline\.bat/, /online\.bat/, /package-lock\.json/, (filename) => path.basename(filename).startsWith('0')],
   persistent: true
 });
