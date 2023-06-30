@@ -4,9 +4,9 @@ const async = require('async');
 const path = require('path');
 
 const git = simpleGit();
-git.cwd('E:\\Git\\GoEntity');
+git.cwd('E:\\Git\\auto_git_push_for_my_blog');
 
-const watcher = chokidar.watch('E:\\Git\\GoEntity', {
+const watcher = chokidar.watch('E:\\Git\\auto_git_push_for_my_blog', {
   ignored: [/(^|[\/\\])\..|node_modules/, /offline\.bat/, /online\.bat/, (filename) => path.basename(filename).startsWith('0')],
   persistent: true
 });
