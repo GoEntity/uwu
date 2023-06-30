@@ -7,7 +7,7 @@ const git = simpleGit();
 git.cwd('E:\\Git\\auto_git_push_for_my_blog');
 
 const watcher = chokidar.watch('E:\\Git\\auto_git_push_for_my_blog', {
-  ignored: [/(^|[\/\\])\..|node_modules/, /offline\.bat/, /online\.bat/, (filename) => path.basename(filename).startsWith('0')],
+  ignored: [/(^|[\/\\])\..|node_modules/, /offline\.bat/, /online\.bat/, /package-lock\.json/, (filename) => path.basename(filename).startsWith('0')],
   persistent: true
 });
 
